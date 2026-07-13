@@ -1,0 +1,676 @@
+fileFormatVersion: 2
+guid: 9be481e31d5f017448c433db2e1c8938
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9151719388005732449
+    second: building_inner-tileg_0
+  - first:
+      213: 3028688542966878198
+    second: building_inner-tileg_1
+  - first:
+      213: -6844812487959595878
+    second: building_inner-tileg_2
+  - first:
+      213: 894560398253789795
+    second: building_inner-tileg_3
+  - first:
+      213: 7715548466369338253
+    second: building_inner-tileg_4
+  - first:
+      213: 5603788312151860022
+    second: building_inner-tileg_5
+  - first:
+      213: -4244709898293443300
+    second: building_inner-tileg_6
+  - first:
+      213: 8106933387564361406
+    second: building_inner-tileg_7
+  - first:
+      213: -9014187093938044109
+    second: building_inner-tileg_8
+  - first:
+      213: 2476463053310267719
+    second: building_inner-tileg_9
+  - first:
+      213: -8933412515658986135
+    second: building_inner-tileg_10
+  - first:
+      213: -2326058544628860650
+    second: building_inner-tileg_11
+  - first:
+      213: -4269697367203811783
+    second: building_inner-tileg_12
+  - first:
+      213: 1064019373941871576
+    second: building_inner-tileg_13
+  - first:
+      213: 320189386496498412
+    second: building_inner-tileg_14
+  - first:
+      213: 8220110677658713520
+    second: building_inner-tileg_15
+  - first:
+      213: -2158403167155149839
+    second: building_inner-tileg_16
+  - first:
+      213: -151279310983535277
+    second: building_inner-tileg_17
+  - first:
+      213: -3891873903677745885
+    second: building_inner-tileg_18
+  - first:
+      213: 90933508610909892
+    second: building_inner-tileg_19
+  - first:
+      213: -1775236359155795794
+    second: building_inner-tileg_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: building_inner-tileg_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 429
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1601326ab40710f70800000000000000
+      internalID: 9151719388005732449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 429
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ff06d2ee20180a20800000000000000
+      internalID: 3028688542966878198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_2
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 416
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94b20dbe475201a0800000000000000
+      internalID: -6844812487959595878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_3
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 416
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3629c0051fd1a6c00800000000000000
+      internalID: 894560398253789795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_4
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 416
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8b11419372231b60800000000000000
+      internalID: 7715548466369338253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_5
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 369
+        width: 42
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6332c4e97c7a4cd40800000000000000
+      internalID: 5603788312151860022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_6
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 369
+        width: 42
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1582a146d2c715c0800000000000000
+      internalID: -4244709898293443300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 364
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb6278fa6fc918070800000000000000
+      internalID: 8106933387564361406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 364
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33389e6e89c27e280800000000000000
+      internalID: -9014187093938044109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 352
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74110ffa60a2e5220800000000000000
+      internalID: 2476463053310267719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 352
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d0e14f5a4260480800000000000000
+      internalID: -8933412515658986135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_11
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 352
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61972a0e31e28bfd0800000000000000
+      internalID: -2326058544628860650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_12
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 300
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e6569cddcfeb4c0800000000000000
+      internalID: -4269697367203811783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 300
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d350f1bbf724ce00800000000000000
+      internalID: 1064019373941871576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_14
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 223
+        width: 253
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cea59f2fc8a817400800000000000000
+      internalID: 320189386496498412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_15
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 300
+        width: 65
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bd3e3cfb13b31270800000000000000
+      internalID: 8220110677658713520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_16
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 235
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3a3a351cfcb02e0800000000000000
+      internalID: -2158403167155149839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_17
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 235
+        width: 88
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355e5f6a44c86edf0800000000000000
+      internalID: -151279310983535277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 135
+        width: 321
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 325dcacfd494df9c0800000000000000
+      internalID: -3891873903677745885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_19
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 146
+        width: 99
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6eee65b8f034100800000000000000
+      internalID: 90933508610909892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: building_inner-tileg_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 36
+        width: 410
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8392cdfe71d57e0800000000000000
+      internalID: -1775236359155795794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      building_inner-tileg_0: 9151719388005732449
+      building_inner-tileg_1: 3028688542966878198
+      building_inner-tileg_10: -8933412515658986135
+      building_inner-tileg_11: -2326058544628860650
+      building_inner-tileg_12: -4269697367203811783
+      building_inner-tileg_13: 1064019373941871576
+      building_inner-tileg_14: 320189386496498412
+      building_inner-tileg_15: 8220110677658713520
+      building_inner-tileg_16: -2158403167155149839
+      building_inner-tileg_17: -151279310983535277
+      building_inner-tileg_18: -3891873903677745885
+      building_inner-tileg_19: 90933508610909892
+      building_inner-tileg_2: -6844812487959595878
+      building_inner-tileg_20: -1775236359155795794
+      building_inner-tileg_3: 894560398253789795
+      building_inner-tileg_4: 7715548466369338253
+      building_inner-tileg_5: 5603788312151860022
+      building_inner-tileg_6: -4244709898293443300
+      building_inner-tileg_7: 8106933387564361406
+      building_inner-tileg_8: -9014187093938044109
+      building_inner-tileg_9: 2476463053310267719
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
