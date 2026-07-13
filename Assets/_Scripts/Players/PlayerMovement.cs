@@ -18,17 +18,13 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        float moveX = 0f;
-        float moveY = 0f;
+        Keyboard kb = Keyboard.current;
 
-        if (Keyboard.current.wKey.isPressed || Keyboard.current.upArrowKey.isPressed)
-            moveY = 1f;
-        if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed)
-            moveY = -1f;
-        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed)
-            moveX = -1f;
-        if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed)
-            moveX = 1f;
+        float moveX = (kb.dKey.isPressed || kb.rightArrowKey.isPressed ? 1f : 0f)
+                    - (kb.aKey.isPressed || kb.leftArrowKey.isPressed ? 1f : 0f);
+
+        float moveY = (kb.wKey.isPressed || kb.upArrowKey.isPressed ? 1f : 0f)
+                    - (kb.sKey.isPressed || kb.downArrowKey.isPressed ? 1f : 0f);
 
         movimiento = new Vector2(moveX, moveY).normalized;
 
@@ -39,12 +35,7 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetFloat("MoveX", Mathf.Abs(moveX));
             animator.SetFloat("MoveY", moveY);
-
-            // Voltear sprite si va a la izquierda
-            if (moveX < 0)
-                spriteRenderer.flipX = false;
-            else if (moveX > 0)
-                spriteRenderer.flipX = true;
+            spriteRenderer.flipX = moveX > 0;
         }
     }
 
