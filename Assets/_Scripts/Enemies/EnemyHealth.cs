@@ -33,6 +33,8 @@ public class EnemyHealth : MonoBehaviour
         GetComponent<EnemyAI>().enabled = false;
         GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
 
+        GameManager.instancia.RegistrarEnemigoDerrotado();
+
         Destroy(gameObject, 1f);
     }
 }
