@@ -37,7 +37,7 @@ public class Proyectil : MonoBehaviour
     {
         if (other.CompareTag("Enemigo"))
         {
-            // Más adelante: other.GetComponent<EnemigoHealth>().RecibirDano(dano);
+            other.GetComponent<EnemyHealth>().RecibirDano(dano);
             Desactivar();
         }
         else if (other.CompareTag("Pared"))
