@@ -32,26 +32,29 @@ public class GameManager : MonoBehaviour
     {
         corazonesRecolectados++;
         ActualizarHUD();
-        VerificarProgreso();
     }
 
     public void RegistrarEnemigoDerrotado()
     {
         enemigosDerrotados++;
-        VerificarProgreso();
+    }
+
+    public bool NivelCompletado()
+    {
+        return corazonesRecolectados >= corazonesTotales && enemigosDerrotados >= enemigosTotales;
+    }
+
+    public int CalcularPuntaje()
+    {
+        int puntaje = (corazonesRecolectados * 10) + (enemigosDerrotados * 25);
+        if (NivelCompletado())
+            puntaje += 50;
+        return puntaje;
     }
 
     void ActualizarHUD()
     {
         if (textoCorazones != null)
             textoCorazones.text = $"CORAZONES: {corazonesRecolectados}/{corazonesTotales}";
-    }
-
-    void VerificarProgreso()
-    {
-        if (corazonesRecolectados >= corazonesTotales && enemigosDerrotados >= enemigosTotales)
-        {
-            Debug.Log("¡Requisitos completos! Puedes salir del nivel.");
-        }
     }
 }

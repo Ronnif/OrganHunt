@@ -14,7 +14,7 @@ public class Corazon : MonoBehaviour
 
             if (sonidoRecoger != null)
             {
-                AudioSource.PlayClipAtPoint(sonidoRecoger, transform.position);
+                AudioSource.PlayClipAtPoint(sonidoRecoger, transform.position, 1.5f);
             }
 
             Destroy(gameObject);

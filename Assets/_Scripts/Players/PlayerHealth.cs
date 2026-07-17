@@ -90,6 +90,7 @@ public class PlayerHealth : MonoBehaviour
         if (reaparicionesActuales <= 0)
         {
             Debug.Log("GAME OVER - Perdiste todas las reapariciones");
+            GameOverUI.instancia.Mostrar();
         }
         else
         {
