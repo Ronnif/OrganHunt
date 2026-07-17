@@ -9,10 +9,7 @@ public class TutorialUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI textoBoton;
 
     private string[] titulos = {
-        "AYUDA 1",
-        "AYUDA 2",
-        "AYUDA 3",
-        "AYUDA 4"
+        "AYUDA 1","AYUDA 2","AYUDA 3","AYUDA 4"
     };
 
     private string[] mensajes = {
@@ -26,6 +23,21 @@ public class TutorialUI : MonoBehaviour
 
     void Start()
     {
+        // NUEVO: si ya vio tutorial, no mostrarlo
+        if (SaveData.TutorialVisto)
+        {
+            panelTutorial.SetActive(false);
+            return;
+        }
+
+        // Si no lo vio, mostrar y pausar
+        panelTutorial.SetActive(true);
+
+        if (PausaManager.instancia != null)
+            PausaManager.instancia.PausarPorTutorial();
+        else
+            Time.timeScale = 0f;
+
         MostrarTutorial();
     }
 
@@ -33,7 +45,6 @@ public class TutorialUI : MonoBehaviour
     {
         textoTitulo.text = titulos[indiceActual];
         textoContenido.text = mensajes[indiceActual];
-
         textoBoton.text = (indiceActual == mensajes.Length - 1) ? "Empezar" : "Siguiente";
     }
 
@@ -41,18 +52,28 @@ public class TutorialUI : MonoBehaviour
     {
         indiceActual++;
 
-        if (indiceActual >= mensajes.Length)
-        {
-            CerrarTutorial();
-        }
-        else
-        {
-            MostrarTutorial();
-        }
+        if (indiceActual >= mensajes.Length) CerrarTutorial();
+        else MostrarTutorial();
     }
 
     void CerrarTutorial()
     {
         panelTutorial.SetActive(false);
+
+        // NUEVO: guardar persistencia
+        SaveData.TutorialVisto = true;
+
+        if (PausaManager.instancia != null)
+            PausaManager.instancia.ReanudarDespuesTutorial();
+        else
+            Time.timeScale = 1f;
+    }
+
+    [ContextMenu("Resetear Tutorial")]
+    public void ResetearTutorial()
+    {
+        PlayerPrefs.DeleteKey("TUTORIAL_VISTO");
+        PlayerPrefs.Save();
+        Debug.Log("Tutorial reseteado");
     }
 }

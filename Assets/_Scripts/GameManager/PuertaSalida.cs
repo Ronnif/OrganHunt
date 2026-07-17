@@ -1,23 +1,28 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class PuertaSalida : MonoBehaviour
 {
-    [SerializeField] private string siguienteNivel = "Level2";
+    [SerializeField] private PanelVictoriaUI panelVictoriaUI;
+    private bool activado = false;
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (activado) return;
+        if (!other.CompareTag("Player")) return;
+
+        if (GameManager.instancia != null && GameManager.instancia.NivelCompletado())
         {
-            if (GameManager.instancia.NivelCompletado())
-            {
-                Debug.Log("¡Nivel completado! Cargando siguiente nivel...");
-                FadeManager.instancia.CargarEscena(siguienteNivel);
-            }
-            else
-            {
-                Debug.Log("Aún faltan requisitos para pasar de nivel.");
-            }
+            activado = true;
+
+            // DESBLOQUEAR MAPA 2
+            SaveData.Nivel2Desbloqueado = true;
+
+            Debug.Log("¡Nivel completado! Mostrando panel de victoria...");
+            panelVictoriaUI.Mostrar();
+        }
+        else
+        {
+            Debug.Log("Aún faltan requisitos para pasar de nivel.");
         }
     }
 }

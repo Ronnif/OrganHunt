@@ -31,14 +31,7 @@ public class AudioManager : MonoBehaviour
 
     public void SetVolumenMusica(bool activar)
     {
-        if (activar)
-        {
-            musicaFondo.volume = 0.5f;
-        }
-        else
-        {
-            musicaFondo.volume = 0f;
-        }
+        musicaFondo.volume = activar ? 0.5f : 0f;
     }
 
     public void SetVolumenSFX(bool activar)
@@ -49,5 +42,11 @@ public class AudioManager : MonoBehaviour
     public void PlayClick()
     {
         sfxSource.PlayOneShot(sonidoClick);
+    }
+
+    public void DetenerMusica()
+    {
+        if (musicaFondo != null && musicaFondo.isPlaying)
+            musicaFondo.Stop();
     }
 }
