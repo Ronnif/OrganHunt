@@ -7,10 +7,11 @@ public class PausaManager : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private GameObject panelPausa;
-    [SerializeField] private GameObject panelTutorial; // <- asignar en Inspector
+    [SerializeField] private GameObject panelTutorial;
     [SerializeField] private string nombreEscenaMenu = "MainMenu";
 
     public bool estaPausado { get; private set; }
+    private bool bloqueado = false;
 
     private void Awake()
     {
@@ -20,7 +21,6 @@ public class PausaManager : MonoBehaviour
 
     private void Start()
     {
-        // Si el tutorial inicia activo, pausamos de una vez
         if (panelTutorial != null && panelTutorial.activeInHierarchy)
             PausarPorTutorial();
         else
@@ -29,7 +29,8 @@ public class PausaManager : MonoBehaviour
 
     private void Update()
     {
-        // Si tutorial está abierto, bloquear tecla ESC para pausa normal
+        if (bloqueado) return;
+
         if (panelTutorial != null && panelTutorial.activeInHierarchy)
             return;
 
@@ -54,19 +55,30 @@ public class PausaManager : MonoBehaviour
         if (panelPausa != null) panelPausa.SetActive(false);
     }
 
-    // Llamar cuando abras el tutorial
     public void PausarPorTutorial()
     {
         estaPausado = true;
         Time.timeScale = 0f;
-        if (panelPausa != null) panelPausa.SetActive(false); // evita choque visual
+        if (panelPausa != null) panelPausa.SetActive(false);
     }
 
-    // Llamar cuando termine/cierres tutorial
     public void ReanudarDespuesTutorial()
     {
         estaPausado = false;
         Time.timeScale = 1f;
+    }
+
+    public void BloquearPausa()
+    {
+        bloqueado = true;
+        estaPausado = true;
+        Time.timeScale = 0f;
+        if (panelPausa != null) panelPausa.SetActive(false);
+    }
+
+    public void DesbloquearPausa()
+    {
+        bloqueado = false;
     }
 
     public void ReiniciarNivel()

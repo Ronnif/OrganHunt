@@ -6,6 +6,9 @@ public class Proyectil : MonoBehaviour
     [SerializeField] private float tiempoVida = 3f;
     [SerializeField] private float dano = 10f;
 
+    // Multiplicador global de daño del jugador (bonus del órgano Cerebro)
+    public static float multiplicadorDano = 1f;
+
     private Rigidbody2D rb;
     private float temporizador;
 
@@ -37,7 +40,7 @@ public class Proyectil : MonoBehaviour
     {
         if (other.CompareTag("Enemigo"))
         {
-            other.GetComponent<EnemyHealth>().RecibirDano(dano);
+            other.GetComponent<EnemyHealth>().RecibirDano(dano * multiplicadorDano);
             Desactivar();
         }
         else if (other.CompareTag("Pared"))

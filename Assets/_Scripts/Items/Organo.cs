@@ -12,16 +12,13 @@ public class Organo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             AplicarEfecto(other);
-
             if (sonidoRecoger != null)
             {
                 AudioSource.PlayClipAtPoint(sonidoRecoger, transform.position, 1.5f);
             }
-
             Destroy(gameObject);
         }
     }
-
 
     void AplicarEfecto(Collider2D jugador)
     {
@@ -30,20 +27,16 @@ public class Organo : MonoBehaviour
             case TipoOrgano.Corazon:
                 jugador.GetComponent<PlayerHealth>().AumentarVidaMaxima(50f);
                 break;
-
             case TipoOrgano.Pulmon:
                 jugador.GetComponent<PlayerMovement>().ActivarHabilidadCorrer();
                 break;
-
             case TipoOrgano.Hueso:
-                // Más adelante
+                jugador.GetComponent<PlayerHealth>().ActivarReduccionDaño(0.25f);
                 break;
-
             case TipoOrgano.Cerebro:
-                // Más adelante
+                Proyectil.multiplicadorDano += 0.25f;
                 break;
         }
-
         Debug.Log("Órgano recolectado: " + tipo);
     }
 }

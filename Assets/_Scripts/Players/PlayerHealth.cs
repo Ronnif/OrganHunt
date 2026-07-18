@@ -33,6 +33,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private AudioClip sonidoRecibirDano;
     [SerializeField] private AudioClip sonidoPerderVida;
 
+    [Header("Órgano Hueso")]
+    [SerializeField] private float multiplicadorDañoRecibido = 1f; // 1 = normal, se reduce al recoger el Hueso (permanente durante el nivel)
+
     private SpriteRenderer spriteRenderer;
     private AudioSource audioSource;
     private bool esInvulnerable = false;
@@ -43,6 +46,7 @@ public class PlayerHealth : MonoBehaviour
         reaparicionesActuales = reaparicionesMaximas;
         spriteRenderer = GetComponent<SpriteRenderer>();
         audioSource = gameObject.AddComponent<AudioSource>();
+        multiplicadorDañoRecibido = 1f; // NUEVO: resetea el bonus del Hueso al iniciar/reiniciar el nivel
         ActualizarHUD();
     }
 
@@ -50,7 +54,9 @@ public class PlayerHealth : MonoBehaviour
     {
         if (vidaActual <= 0 || esInvulnerable) return;
 
-        vidaActual = Mathf.Clamp(vidaActual - cantidad, 0, vidaMaxima);
+        float dañoFinal = cantidad * multiplicadorDañoRecibido; // NUEVO: aplica el bonus del Hueso
+
+        vidaActual = Mathf.Clamp(vidaActual - dañoFinal, 0, vidaMaxima);
         ActualizarHUD();
         StartCoroutine(EfectoParpadeoDano());
 
@@ -78,6 +84,15 @@ public class PlayerHealth : MonoBehaviour
 
         if (textoFlotante != null)
             textoFlotante.Mostrar($"+{Mathf.RoundToInt(aumento)}");
+    }
+
+    // NUEVO: llamado desde Organo.cs al recoger el Hueso (efecto permanente durante el nivel, se resetea al reiniciar)
+    public void ActivarReduccionDaño(float porcentajeReduccion)
+    {
+        multiplicadorDañoRecibido = 1f - porcentajeReduccion;
+
+        if (textoFlotante != null)
+            textoFlotante.Mostrar($"-{Mathf.RoundToInt(porcentajeReduccion * 100)}% DAÑO");
     }
 
     private void Morir()
